@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RockPaperScissors</title>
+    <style>
+      #result {
+        white-space: pre-line;
+      }
+      #finalGif {
+        display: none;
+        max-width: 260px;
+        margin: 12px auto;
+        border-radius: 10px;
+      }
+      .scoreboard {
+        margin: 8px 0;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Let The Games Begin</h1>
+    <h2>First to 5 wins yessir</h2>
+
+    <div class="game">
+      <h3>Round <span id="current"></span> <span id="total"></span></h3>
+    </div>
+
+    <div class="scoreboard">
+      You : <span id="humanScore">0</span> - Computer:
+      <span id="computerScore">0</span>
+    </div>
+
+    <div class="choices">
+      <button class="choice" data-move="rock">rock</button>
+      <button class="choice" data-move="paper">paper</button>
+      <button class="choice" data-move="scissors">scissors</button>
+    </div>
+
+    <div id="result" class="result"></div>
+
+    <img id="finalGif" alt="final animation" />
+
+    <script src="app.js"></script>
+  </body>
+</html>
